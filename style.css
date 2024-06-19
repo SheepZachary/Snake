@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(166, 166, 166);
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: rgb(72, 72, 72);
+    box-shadow: 0 20px 40px rgb(106, 106, 129);
+}
+.game-details{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: rgba(215, 215, 215, 0.913);
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .player{
+    background: rgb(0, 102, 255);
+}
+.play-board .food{
+    background: rgb(255, 0, 111);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#speed-input {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+}
+#speed-button {
+    padding: 5px 10px;
+}
